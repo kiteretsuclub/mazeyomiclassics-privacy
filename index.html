@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>プライバシーポリシー｜Mazeyomi Classics</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    margin: 0 auto; padding: 32px 20px 80px; max-width: 720px;
+    font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Noto Sans JP", sans-serif;
+    line-height: 1.9; color: #1B1C1C; background: #FCF9F8;
+  }
+  @media (prefers-color-scheme: dark) { body { color: #ECEDEE; background: #16181A; } }
+  h1 { font-size: 1.6rem; margin: 0 0 4px; }
+  h2 { font-size: 1.15rem; margin: 40px 0 8px; padding-top: 16px; border-top: 1px solid rgba(128,128,128,.35); }
+  h3 { font-size: 1rem; margin: 24px 0 4px; }
+  .updated { font-size: .85rem; opacity: .7; margin: 0 0 24px; }
+  ul { padding-left: 1.2em; }
+  a { color: #0E3566; }
+  @media (prefers-color-scheme: dark) { a { color: #9DBBE6; } }
+  .lang { margin-top: 64px; }
+  code { font-size: .9em; background: rgba(128,128,128,.15); padding: 1px 5px; border-radius: 3px; }
+</style>
+</head>
+<body>
+
+<h1>プライバシーポリシー</h1>
+<p class="updated">Mazeyomi Classics（以下「本アプリ」）／最終更新日: 2026年9月26日</p>
+
+<p>本アプリは、著作権の保護期間が終わった英語の名作を、日本語をまぜながら読むためのアプリです。本ポリシーは、本アプリが取り扱う情報とその目的について説明します。</p>
+
+<h2>1. 端末内に保存する情報</h2>
+<p>次の情報は、利用者の端末内にのみ保存されます。開発者がこれらを閲覧・収集することはありません。</p>
+<ul>
+  <li>読書位置（どの作品をどこまで読んだか）と読書の状態</li>
+  <li>単語帳に保存した単語と例文、クイズの成績</li>
+  <li>本棚の構成（作成した本棚と、その中に入れた作品）</li>
+  <li>表示設定（読み方のモード、日本語にする語の量、書体、文字サイズ、行間、配色など）</li>
+  <li>端末に保存した作品の本文ファイル</li>
+</ul>
+<p>これらはアプリを削除すると端末から消去されます。単語の辞書と読み上げは端末内で処理し、調べた単語や読んでいる文章を外部へ送ることはありません。</p>
+
+<h2>2. アカウント連携と同期</h2>
+<p>Googleアカウント、またはApple Account（iOS版の「Appleでサインイン」）でログインすると、読書位置・本棚の構成・表示設定・単語帳・クイズの成績をクラウドに保存し、同じアカウントでログインした他の端末へ引き継げます。ログインは任意で、ログインしなくても本アプリのすべての読書機能を利用できます。</p>
+<ul>
+  <li><strong>利用するサービス</strong>：認証に Google の Firebase Authentication（Googleログイン／Appleでサインイン）、データの保存に Cloud Firestore（保存先リージョン: 東京）を利用します。Google のデータの取り扱いについては <a href="https://firebase.google.com/support/privacy">Firebase のプライバシーとセキュリティ</a> をご確認ください。</li>
+  <li><strong>保存される情報</strong>：ログインに使ったアカウントの識別子・表示名・メールアドレス（認証のため。Appleでサインインで「メールを非公開」を選んだ場合は、Appleが発行する転送用アドレス）と、読書位置・本棚・表示設定・単語帳・クイズの成績です。保存したデータは、本人のログインでのみ読み書きできるよう制限しています。</li>
+  <li><strong>同期しないもの</strong>：端末に保存した作品の本文ファイルと購入の情報は同期の対象外です。</li>
+  <li><strong>削除</strong>：アプリの「設定」タブにある「アカウントを削除」から、アカウントとクラウドに保存したデータをいつでも削除できます（<a href="account-deletion.html">削除の方法</a>）。ログアウトすると、その端末での同期は止まります（クラウドのデータは残ります）。アプリから削除できない場合は、末尾の連絡先までご連絡ください。</li>
+</ul>
+
+<h2>3. 通信先</h2>
+<ul>
+  <li><strong>本アプリの配信サーバー（Firebase Hosting）</strong>：作品一覧および作品本文の取得のために通信します。取得するのはファイルそのものだけで、閲覧内容や読書位置を送信することはありません。</li>
+  <li><strong>Google（Firebase）</strong>：ログインと読書データの同期のために通信します（ログインした場合のみ）。</li>
+  <li><strong>Google（広告配信）</strong>：後述の広告の表示のために通信します。</li>
+</ul>
+
+<h2>4. 広告について</h2>
+<p>本アプリは、無料での提供を維持するために Google の広告サービス「Google AdMob」を利用して、バナー広告と、利用者が任意で視聴する動画広告（「広告で応援」）を表示します。</p>
+<ul>
+  <li>広告の配信・測定のために、Google およびその広告パートナーが広告識別子などの情報を利用することがあります。取得される情報とその取り扱いについては <a href="https://policies.google.com/technologies/partner-sites">Google のポリシーと規約</a> をご確認ください。</li>
+  <li>iOS では、広告識別子を利用する前に、端末のトラッキング許可の確認画面を表示します。許可しない場合、広告識別子は利用されません。</li>
+  <li>広告のパーソナライズは、端末の設定から無効にできます（Android: 設定 &gt; プライバシー &gt; 広告、iOS: 設定 &gt; プライバシーとセキュリティ &gt; トラッキング）。</li>
+  <li>欧州経済領域・英国・スイスの利用者には、初回起動時に同意を求める画面を表示します。同意内容は、アプリの「設定 &gt; 広告のプライバシー &gt; 広告の設定を管理」からいつでも変更できます。</li>
+  <li>広告の追跡に同意しない場合でも、読書・検索・保存といった本アプリの機能は制限なくご利用いただけます。</li>
+  <li>有料プラン（月額100円・年額500円・買い切り1,000円）を購入すると、アプリ内の広告は表示されません。購入は Google Play / App Store の決済で処理され、開発者はカード情報を取得しません。</li>
+</ul>
+
+<h2>5. 第三者への提供</h2>
+<p>開発者が、利用者の個人情報を第三者へ販売・提供することはありません。広告配信に伴う情報の取り扱いは、前項に記載の Google のポリシーに従います。</p>
+
+<h2>6. 児童のプライバシー</h2>
+<p>本アプリは13歳未満の児童を対象としたものではなく、児童から意図的に個人情報を収集することはありません。</p>
+
+<h2>7. 本ポリシーの変更</h2>
+<p>本ポリシーは、機能の追加や法令の変更に応じて改定することがあります。重要な変更がある場合は、本ページの最終更新日を改めます。</p>
+
+<h2>8. お問い合わせ</h2>
+<p>本ポリシーおよび本アプリに関するお問い合わせは、次の連絡先までお願いします（<a href="support.html">サポート</a>）。</p>
+<p>連絡先: <code>used.kiteretsu@gmail.com</code></p>
+
+<div class="lang" lang="en">
+<h1>Privacy Policy</h1>
+<p class="updated">Mazeyomi Classics / Last updated: September 26, 2026</p>
+
+<p>Mazeyomi Classics (the “App”) is an app for reading classic English literature whose copyright has expired, with Japanese words mixed into the text. This policy explains what information the App handles and why.</p>
+
+<h2>1. Information stored on your device</h2>
+<p>The following is stored only on your device. The developer cannot see or collect it.</p>
+<ul>
+  <li>Reading positions and reading status</li>
+  <li>Words and example sentences saved to your word book, and quiz results</li>
+  <li>Your bookshelves and the works placed on them</li>
+  <li>Display settings (reading mode, how many words are shown in Japanese, typeface, text size, line height, colour theme)</li>
+  <li>Book text files you have saved for offline reading</li>
+</ul>
+<p>All of this is removed from your device when you uninstall the App. Dictionary look-ups and read-aloud are processed on the device; the words you look up and the text you read are never sent anywhere.</p>
+
+<h2>2. Account sign-in and sync</h2>
+<p>If you sign in with a Google account or an Apple Account (“Sign in with Apple” on iOS), your reading positions, bookshelves, display settings, word book and quiz results are stored in the cloud so you can carry them over to your other devices. Signing in is optional; every reading feature works without it.</p>
+<ul>
+  <li><strong>Services used</strong>: Google Firebase Authentication for sign-in (Google Sign-In / Sign in with Apple) and Cloud Firestore (stored in the Tokyo region) for the data. See <a href="https://firebase.google.com/support/privacy">Firebase Privacy and Security</a> for how Google handles it.</li>
+  <li><strong>What is stored</strong>: the identifier, display name and email address of the account you signed in with (for authentication; if you choose “Hide My Email” with Sign in with Apple, the relay address issued by Apple), plus reading positions, bookshelves, display settings, word book and quiz results. Security rules restrict access so that only you can read or write your own data.</li>
+  <li><strong>What is not synced</strong>: book text files saved for offline reading and purchase information.</li>
+  <li><strong>Deletion</strong>: you can delete your account and the data stored in the cloud at any time from “Delete account” in the Settings tab (<a href="account-deletion.html">how to delete</a>). Signing out only stops syncing on that device (your cloud data is kept). If you cannot delete it in the App, contact us at the address below.</li>
+</ul>
+
+<h2>3. Network connections</h2>
+<ul>
+  <li><strong>The App’s own content server (Firebase Hosting)</strong>: to download the catalogue and the text of works. Only the files themselves are requested; what you read and where you are in a book are not sent.</li>
+  <li><strong>Google (Firebase)</strong>: for sign-in and syncing your reading data (only when signed in).</li>
+  <li><strong>Google</strong>: for serving ads, as described below.</li>
+</ul>
+
+<h2>4. Advertising</h2>
+<p>The App shows banner ads, and optional video ads you choose to watch (“Support with an ad”), through Google AdMob so that it can be offered free of charge.</p>
+<ul>
+  <li>Google and its advertising partners may use advertising identifiers and similar information to serve and measure ads. See <a href="https://policies.google.com/technologies/partner-sites">Google’s Policies and Terms</a> for details.</li>
+  <li>On iOS, the App asks for tracking permission before the advertising identifier is used. If you decline, it is not used.</li>
+  <li>You can turn off ad personalisation in your device settings (Android: Settings &gt; Privacy &gt; Ads; iOS: Settings &gt; Privacy &amp; Security &gt; Tracking).</li>
+  <li>Users in the EEA, the UK and Switzerland are shown a consent form on first launch. You can change your choices at any time from Settings &gt; Ad privacy &gt; Manage ad settings in the App.</li>
+  <li>Declining ad tracking does not restrict reading, search, or offline saving in any way.</li>
+  <li>Purchasing a premium plan (¥100/month, ¥500/year, or ¥1,000 one-time; prices vary by region) removes ads from the App. Payments are processed by Google Play / the App Store; the developer never receives your card details.</li>
+</ul>
+
+<h2>5. Sharing with third parties</h2>
+<p>The developer does not sell or otherwise provide your personal information to third parties. Information handled in connection with advertising is governed by the Google policies referenced above.</p>
+
+<h2>6. Children’s privacy</h2>
+<p>The App is not directed to children under 13 and does not knowingly collect personal information from them.</p>
+
+<h2>7. Changes to this policy</h2>
+<p>This policy may be revised as features change or as required by law. The “last updated” date above will be changed when it is.</p>
+
+<h2>8. Contact</h2>
+<p>For questions about this policy or the App, please contact us (<a href="support.html">Support</a>):</p>
+<p>Contact: <code>used.kiteretsu@gmail.com</code></p>
+</div>
+
+</body>
+</html>
