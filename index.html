@@ -52,7 +52,8 @@
 
 <h2>3. 通信先</h2>
 <ul>
-  <li><strong>本アプリの配信サーバー（Firebase Hosting）</strong>：作品一覧および作品本文の取得のために通信します。取得するのはファイルそのものだけで、閲覧内容や読書位置を送信することはありません。</li>
+  <li><strong>本アプリの配信サーバー（Firebase Hosting）</strong>：作品一覧などの更新データの取得のために通信します。取得するのはファイルそのものだけで、閲覧内容や読書位置を送信することはありません。</li>
+  <li><strong>作品本文の公開サイト</strong>：作品の本文を、著作権の保護期間が終わった作品を公開している外部のサイトから、その作品を初めて開く・保存するときに一度だけ取得します。送信するのは取得する作品の番号だけで、ログイン情報・閲覧内容・読書位置を送信することはありません。取得した本文は端末で整え、端末にだけ保存します。</li>
   <li><strong>Google（Firebase）</strong>：ログインと読書データの同期のために通信します（ログインした場合のみ）。</li>
   <li><strong>Google（広告配信）</strong>：後述の広告の表示のために通信します。</li>
 </ul>
@@ -109,7 +110,8 @@
 
 <h2>3. Network connections</h2>
 <ul>
-  <li><strong>The App’s own content server (Firebase Hosting)</strong>: to download the catalogue and the text of works. Only the files themselves are requested; what you read and where you are in a book are not sent.</li>
+  <li><strong>The App’s own content server (Firebase Hosting)</strong>: to download updates such as the latest catalogue. Only the files themselves are requested; what you read and where you are in a book are not sent.</li>
+  <li><strong>Public-domain text site</strong>: when you first open or save a book, the App downloads its text once from an external site that publishes public-domain works. Only the number of the book is sent; no account information, reading history or reading position is sent. The text is formatted and stored only on your device.</li>
   <li><strong>Google (Firebase)</strong>: for sign-in and syncing your reading data (only when signed in).</li>
   <li><strong>Google</strong>: for serving ads, as described below.</li>
 </ul>
